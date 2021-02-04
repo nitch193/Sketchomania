@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="main">
+    <h1>Etch-A-Sketch</h1>
+    <div class="controls">
+      <div class="grid-conrol">
+        <span id="gridsize">12 x 12</span>
+        <input type="range" min="1" max="50" value="12" id="range" />
+      </div>
+      <div class="color-control">
+        <input type="color" name="colorinput" id="colorInput" value="#23aaf2" />
+        <button id="rgb">Use Chosen color</button>
+      </div>
+    </div>
+    <div>
+      <div id="sketch"></div>
+    </div>
+    <p id="enableinfo">Drawing Mode is off 🚫: press 'd' to Enable</p>
+    <script src="script.js"></script>
+  </body>
+</html>
