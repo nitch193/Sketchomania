@@ -22,7 +22,8 @@ slider.onchange = function () {
   if (flag === 1) {
     flag = 0;
     setDrawAttribute(pixels);
-    drawInfo.textContent = "Drawing Mode is Off";
+    drawInfo.textContent = "Drawing Mode is on 🌈: press 'd' to disable";
+    drawInfo.style.color = "#35d900";
   }
   gridvalue.textContent = `${this.value} x ${this.value}`;
 };
